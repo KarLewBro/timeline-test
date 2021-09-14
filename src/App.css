@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+input[type="text"] {
+  margin-bottom: 50px;
+  padding: 4px 5px 5px 15px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.5s;
+  font-size: calc(3px + 2vmin);
+}
+
+input[type="text"]:hover {
+  box-shadow: 0 0 10px black;
+  transition: 0.3s;
+}
+
+.App {}
+
+.App-container {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  padding: 10%;
+  border: 2px dashed white;
+}
+
+.Span-container {
+  flex: auto;
+  width: 100%;
+  margin: auto;
+  border: 2px dashed magenta;
+}
+
+.Span {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  white-space: nowrap;
+  font-weight: bold;
+  border: 2px dahsed green;
+  border-radius: 10px;
+  background-color: #777777;
+  animation: Stretchy 3s;
+}
+
+@keyframes Stretchy {
+  0% {
+    width: 10%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
